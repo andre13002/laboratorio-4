@@ -19,9 +19,18 @@ Luego realizamos un diagrama de flujo para tener todas las acciones en cuenta de
 
 se realizo la toma de un ECG de un usuario por medio de la tarjeta de adquisición de arduino con electrodos en el pecho y con el amplificador AD8232, con sus respectivos electrodos como se muestra en la imagen.
 
+![3-2Belectrodos](https://github.com/user-attachments/assets/58fdc173-7944-418a-a282-e8979c4dfe3f)
+
 Se tomo la señal con una frecuencia de muestreo de 250 Hz al ser de ese valor se demora un poco tomándo los los datos, por ende en nuestra señal un segundo son al rededor de 40 segundos. Entonces en el eje x se perciben pocos segundos pero en realidad la señal se capturo durante 5 minutos.
 Al tener esto lo que hicimos fue tomarle una captura, que guardamos en el escritorio y luego llamamos a python, donde por medio de una función convertimos en matriz para luego allí gráficar la matriz.
+![python](https://github.com/user-attachments/assets/1200b45e-67ab-4968-b171-68db9d3e7a8b)  <img width="471" alt="matriz" src="https://github.com/user-attachments/assets/85f70625-6044-4dc4-b16c-c627a58bd7cc">
+
+<img width="450" alt="ecg sin nada " src="https://github.com/user-attachments/assets/b2724b3d-7ad7-45ed-9534-4a62d9e84f7c">
+
 Cuando estaba finalmente la señal en python, lo que se hizo fue agregar filtros pasa altos y pasa bajos para asi eliminar ruidos por interferencias, ambientes y por campos electromagnéticosticos.
+
+<img width="439" alt="ecg con filtros" src="https://github.com/user-attachments/assets/54f3e3d1-53fd-45d9-99fe-ac4e41010ae8">
+
 
 Con la señal filtrada calculamos los parámetros básicos de la HRV en el dominio del tiempo, esto es: La variabilidad de la frecuencia cardíaca (HRV, por sus siglas en inglés) es una medida de las variaciones en el tiempo entre latidos consecutivos del corazón, El HRV es una herramienta importante para evaluar la salud del sistema nervioso autónomo y la capacidad del cuerpo para adaptarse a factores de estrés, recuperación y actividad física:
       -Alta HRV: Suele indicar buena adaptabilidad y un equilibrio saludable entre los sistemas nerviosos simpático y parasimpático. Se asocia con una mejor salud cardiovascular y menor riesgo de enfermedades.
