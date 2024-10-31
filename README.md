@@ -23,6 +23,8 @@ se realizo la toma de un ECG de un usuario por medio de la tarjeta de adquisici�
 
 Se tomo la señal con una frecuencia de muestreo de 250 Hz al ser de ese valor se demora un poco tomándo los los datos, por ende en nuestra señal un segundo son al rededor de 40 segundos. Entonces en el eje x se perciben pocos segundos pero en realidad la señal se capturo durante 5 minutos.
 Al tener esto lo que hicimos fue tomarle una captura, que guardamos en el escritorio y luego llamamos a python, donde por medio de una función convertimos en matriz para luego allí gráficar la matriz.
+
+
 ![python](https://github.com/user-attachments/assets/1200b45e-67ab-4968-b171-68db9d3e7a8b)  <img width="471" alt="matriz" src="https://github.com/user-attachments/assets/85f70625-6044-4dc4-b16c-c627a58bd7cc">
 
 <img width="450" alt="ecg sin nada " src="https://github.com/user-attachments/assets/b2724b3d-7ad7-45ed-9534-4a62d9e84f7c">
