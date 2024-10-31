@@ -40,7 +40,9 @@ Con la señal filtrada calculamos los parámetros básicos de la HRV en el domin
 Por esto calculamos:
 Los intervalos R-R que son el  tiempo entre dos picos R consecutivos en una señal de electrocardiograma (ECG). Los picos R representan el punto más alto de cada latido en el complejo QRS, que es la parte de la señal ECG correspondiente a la despolarización de los ventrículos cardíacos, y son los puntos más fáciles de identificar en el ECG, se mide en segundos o milisegundos. Este intervalo es crucial en el análisis de la variabilidad de la frecuencia cardíaca (HRV), ya que refleja cómo varía la frecuencia cardíaca con el tiempo y puede ofrecer información sobre el funcionamiento del sistema nervioso autónomo.
 Por esto lo calculamos en segundos este intervalo y dio lo siguiente:
+
 <img width="445" alt="R-R" src="https://github.com/user-attachments/assets/25dc6c3b-e5e6-4282-ac98-24b61e4862fc">
+
 <img width="491" alt="INTERVALO R-R" src="https://github.com/user-attachments/assets/7c362546-11e4-4c57-bb19-db26ace8967c">
 
 En los datos de los intervalos R-R calculados, se observa una variabilidad moderada entre los tiempos de cada latido consecutivo, con valores que van de 0.064 a 0.112 segundos. Esta variabilidad es un signo positivo de la capacidad de adaptación del sistema nervioso autónomo, reflejando que tanto el sistema simpático como el parasimpático están ajustando la frecuencia cardíaca en respuesta a las necesidades del cuerpo. Aunque la mayoría de los intervalos se concentran entre 0.07 y 0.08 segundos (lo que sugiere una frecuencia cardíaca promedio entre 75 y 85 latidos por minuto), el intervalo de 0.112 segundos es una posible variación normal o un artefacto en la señal. Este dato nos mostró una frecuencia cardíaca en un rango saludable y una HRV adecuada para un adulto en reposo.
@@ -56,9 +58,11 @@ Al analizar esto hicimos  un espectrograma de la HRV usando la transformada wave
 <img width="717" alt="espectograma" src="https://github.com/user-attachments/assets/4bdc121b-3408-40d5-9155-8f0aa31806de">
 
 Posterior a eso quisimos ver exactamente en que puntos la morlet coincidió con la señal de ECG y obtuvimos esto:
+
 <img width="444" alt="donde coincide" src="https://github.com/user-attachments/assets/73ecb9f5-940a-40b4-8adf-6e924cb04b8a">
 
 Luego para saber exactamente este dato con mas precisiones calculamos la bondad  y obtuvimos esto: 
+
 <img width="169" alt="bondad" src="https://github.com/user-attachments/assets/e7f99923-8497-468d-8988-ad407fee0010">
 
 En donde: R-squared=Coeficiente de determinación: muestra que la wavelet Morlet puede explicar el 65% de la variabilidad total de la señal ECG original. En otras palabras, el modelo wavelet captura una parte significativa de las características de la señal, pero un 35% de la variabilidad no está representada en la reconstrucción. Idealmente, un R-squared cercano a 1 indicaría una representación más precisa.
