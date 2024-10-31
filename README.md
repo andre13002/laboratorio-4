@@ -17,6 +17,10 @@ Una alta HRV suele ser signo de buena adaptabilidad del sistema autónomo, mient
 
 Luego realizamos un diagrama de flujo para tener todas las acciones en cuenta de acuerdo a lo anterior y se envió vía correo.
 
+![IMG_1110](https://github.com/user-attachments/assets/e95cbc6d-253d-4587-aeab-2ef4624a2ef1)
+![IMG_1109](https://github.com/user-attachments/assets/e499f07f-ceec-4c20-b274-edb1002c926a)
+
+
 se realizo la toma de un ECG de un usuario por medio de la tarjeta de adquisición de arduino con electrodos en el pecho y con el amplificador AD8232, con sus respectivos electrodos como se muestra en la imagen.
 
 ![3-2Belectrodos](https://github.com/user-attachments/assets/58fdc173-7944-418a-a282-e8979c4dfe3f)
